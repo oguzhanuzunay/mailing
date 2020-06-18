@@ -22,8 +22,9 @@ const server = http.createServer((req, res) => {
     }
   }
 });
+//servera bağlama
 
 var port = process.env.PORT || 8080;
-var server = server.listen(port, function () {
+server.listen(port, function () {
   console.log('app running on port 8080');
 });
