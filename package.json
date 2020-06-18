@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "git": "^0.1.5",
     "nodemon": "^2.0.4"
   }
 }
