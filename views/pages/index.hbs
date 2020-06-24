@@ -129,21 +129,17 @@
     </style>
   </head>
   <body>
-    <form action="index.html" class="login-form">
+    <form action="/login" method="POST" class="login-form">
       <div class="logo"></div>
       <h1>Login</h1>
-
+      <input type="hidden" name="_id" value="{{employee._id}}">
       <div class="txtb">
-        <input
-          class="userName"
-          type="text"
-          style="font-family: 'Roboto', sans-serif;"
-        />
+         <input type="text" class="userName" name="username" style="font-family: 'Roboto', sans-serif;" value="{{employee.userName}}">
         <span data-placeholder="Username"></span>
       </div>
 
       <div class="txtb">
-        <input class="userPassword" type="password" />
+        <input type="text" class="Password" name="password" style="font-family: 'Roboto', sans-serif;" value="{{employee.password}}">
         <span data-placeholder="Password"></span>
       </div>
 
@@ -169,6 +165,7 @@
 
       var loginUserName = document.querySelector('.userName').value;
       var loginPassword = document.querySelector('.userPassword').value;
+      
     </script>
   </body>
 </html>

@@ -366,7 +366,7 @@
       </div>
       <div class="box">
         <div class="head">Background-Url</div>
-        <input type="text" class="bgUrlInput" placeholder="#https://adcropper.com/images" />
+        <input type="text" class="bgUrlInput" placeholder="https://picsum.photos/200" />
       </div>
      <div class="box bigBox">
       <div class="logos">
@@ -404,6 +404,7 @@
         <button class="copy but">Copy All Code</button>
         <button class="reset but">Reset to Page</button>
       </div>
+      <button draggable="false" class="but" style="margin-left:30%"><a href="/login">Sign Out </a> </button>
     </div>
     <div class="rightside">
       <div class="siteDemo">
@@ -466,7 +467,7 @@
   var bgColor = "#3a3a3a";
   var textColor = "#FFFFFF"
   var bgUrl = "http://source.unsplash.com/random/720x250";
-  var text = "ADCropper"
+  var text = "Logo"
   var Page=1;
   
 
@@ -1793,7 +1794,7 @@ const defaultsAll=()=>{
     document.querySelectorAll("input")[3].placeholder=defaultPlaceholder4
 
 
-    //#https://adcropper.com/images
+    //https://picsum.photos/200
     
     document.querySelector(".textBox").style.display="none";
     document.querySelector(".boxs").style.gridTemplateColumns=" 45% 45%"
